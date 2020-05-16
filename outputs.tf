@@ -8,7 +8,7 @@ output "azurerm_sql_server_id_fqdn" {
   description = "The fully qualified domain name of the Azure SQL Server"
 }
 
-output "azurerm_mssql_database_id_" {
+output "azurerm_mssql_database_id" {
   value = "${azurerm_mssql_database.exampledatabase.id}"
   description = "The ID of the MS SQL Database."
 }
