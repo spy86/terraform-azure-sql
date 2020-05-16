@@ -28,7 +28,7 @@
 
 | Name | Description |
 |------|-------------|
-| azurerm\_mssql\_database\_id\_ | The ID of the MS SQL Database. |
+| azurerm\_mssql\_database\_id | The ID of the MS SQL Database. |
 | azurerm\_sql\_server\_id | The Microsoft SQL Server ID. |
 | azurerm\_sql\_server\_id\_fqdn | The fully qualified domain name of the Azure SQL Server
 
