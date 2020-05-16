@@ -15,8 +15,6 @@
 | database\_name | Database name | `string` | n/a | yes |
 | database\_sku\_name | SKU name for database | `string` | `"BC_Gen5_2"` | no |
 | envirioment | Var used for backend container name key | `string` | n/a | yes |
-| location | Location which are used for all resources | `string` | `"West Europe"` | no |
-| prefix | Prefix which are used for all resources | `string` | `"dev-"` | no |
 | resource\_owner | Tag describing the resource owner | `string` | n/a | yes |
 | rg\_location | Location of resource group | `string` | `"West Europe"` | no |
 | rg\_name | Name of resource group | `string` | n/a | yes |
@@ -28,14 +26,18 @@
 
 ## Outputs
 
-No output.
+| Name | Description |
+|------|-------------|
+| azurerm\_mssql\_database\_id\_ | The ID of the MS SQL Database. |
+| azurerm\_sql\_server\_id | The Microsoft SQL Server ID. |
+| azurerm\_sql\_server\_id\_fqdn | The fully qualified domain name of the Azure SQL Server
 
 ### Terraform plan
 ```
-terraform apply -var-file="env/prod.tfvars"
+terraform apply -var-file="env/dev.tfvars"
 ```
 ### Terraform apply
 ```
-terraform plan -var-file="env/prod.tfvars"
+terraform plan -var-file="env/dev.tfvars"
 ```
 
